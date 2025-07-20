@@ -1,0 +1,1076 @@
+:root {
+  --red: #990000; /* أحمر داكن */
+  --dark-red: #660000; /* أحمر غامق جدًا */
+  --black: #000;
+  --white: #fff;
+  --gold: #ffd700;
+}
+
+/* ====== Base Styles ====== */
+body {
+  margin: 0;
+  font-family: "Cairo", sans-serif;
+  background-color: var(--dark-red);
+  color: var(--white);
+  direction: rtl;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+  color: var(--white);
+  margin-top: 50px;
+}
+
+/* ====== Navbar ====== */
+.navbar {
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.logo span {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: var(--gold);
+}
+
+/* ====== Hero Section ====== */
+.hero {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 70%,
+      var(--dark-red)
+    ),
+    url("images/ahly-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  color: var(--white);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: var(--white);
+  color: var(--red);
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: var(--gold);
+  color: var(--black);
+}
+
+/* ====== Match Summary ====== */
+.match-summary {
+  background-color: var(--red);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.match-card {
+  background-color: var(--dark-red);
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  color: var(--white);
+}
+
+/* ====== Trophy Counter ====== */
+.trophies {
+  background-color: var(--red);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.counter-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.counter {
+  background-color: var(--dark-red);
+  padding: 20px;
+  border-radius: 10px;
+  width: 120px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.counter h3 {
+  font-size: 36px;
+  color: var(--gold);
+  margin: 0;
+}
+
+.counter p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* ====== Club Stats ====== */
+.club-stats {
+  background-color: var(--red);
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.stats-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.stat {
+  background-color: var(--dark-red);
+  padding: 20px;
+  border-radius: 10px;
+  width: 140px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.stat h3 {
+  font-size: 36px;
+  color: var(--gold);
+  margin: 0;
+}
+
+.stat p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+/* ====== Chants ====== */
+.chants {
+  background-color: var(--red);
+  padding: 30px 10px;
+  text-align: center;
+}
+
+.chant-box {
+  background-color: var(--dark-red);
+  border: 1px solid var(--gold);
+  border-radius: 8px;
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ====== Footer ====== */
+.footer {
+  background-color: #710909;
+  padding: 30px 20px;
+  text-align: center;
+  color: white;
+}
+
+.footer .social-links {
+  margin-bottom: 15px;
+}
+
+.footer .social-links a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: var(--gold); /* أو أي لون تميزي */
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+footer .social a {
+  color: var(--white);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .social a:hover {
+  color: var(--gold);
+}
+
+.trophies-marquee {
+  background-color: #710909;
+  color: var(--gold);
+  padding: 15px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scrollLeft 20s linear infinite;
+  font-size: 18px;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.matches {
+  padding: 60px 20px;
+  background-color: #710909;
+  text-align: center;
+}
+
+.matches h2 {
+  font-size: 28px;
+  color: var(--gold);
+  margin-bottom: 30px;
+}
+
+.matches-table {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-family: "Cairo", sans-serif;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.matches-table thead {
+  background: linear-gradient(90deg, #b30000, #8b3030);
+  color: white;
+}
+
+.matches-table th,
+.matches-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.matches-table th {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.matches-table tbody tr:nth-child(even) {
+  background-color: #8b3030;
+  color: white;
+}
+
+.matches-table tbody tr:nth-child(odd) {
+  background-color: #a52a2a;
+  color: white;
+}
+
+.matches-table tbody tr:hover {
+  background-color: #c0392b;
+  transition: background-color 0.3s ease;
+}
+
+.countdown {
+  background-color: #5e0303;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.countdown h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+#timer {
+  font-size: 20px;
+  font-weight: bold;
+  background: #710909;
+  display: inline-block;
+  padding: 20px 30px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.trophy-cards {
+  padding: 60px 20px;
+  background-color: #5c0707;
+  text-align: center;
+  color: white;
+}
+
+.trophy-cards h2 {
+  font-size: 32px;
+  color: var(--gold);
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background-color: #710909;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.card-info h3 {
+  font-size: 20px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.card-info p {
+  font-size: 18px;
+  color: white;
+}
+
+/* ========= ROOT VARIABLES ========= */
+:root {
+  --red: #710909;
+  --light-red: #8b3030;
+  --gold: #ffd700;
+  --white: #ffffff;
+  --black: #000;
+}
+
+/* ========= RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #fff5f5;
+  color: #222;
+  line-height: 1.6;
+  direction: rtl;
+}
+
+/* ========= NAVBAR ========= */
+.navbar {
+  background-color: var(--red);
+  padding: 15px 20px;
+  color: var(--white);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.navbar nav a {
+  color: var(--white);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+
+/* ========= LEGENDS PAGE ========= */
+:root {
+  --red: #710909;
+  --light-red: #8b3030;
+  --gold: #ffd700;
+  --cream: #fff9f0;
+  --white: #ffffff;
+  --black: #000;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--red);
+  color: var(--gold);
+  direction: rtl;
+  line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+
+:root {
+  --red: #710909;
+  --light-red: #8b3030;
+  --gold: #ffd700;
+  --cream: #fff9e6;
+  --white: #ffffff;
+  --black: #000;
+  --dark: #111;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--red);
+  color: var(--gold);
+  direction: rtl;
+  line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: var(--dark);
+  padding: 15px 20px;
+  color: var(--white);
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--white);
+}
+
+.navbar nav a {
+  color: var(--white);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: var(--gold);
+  border-bottom: 2px solid var(--gold);
+}
+
+/* ========== LEGENDS SECTION ========== */
+.legends-section {
+  padding: 60px 20px;
+  background-color: var(--red);
+  text-align: center;
+}
+
+.page-title {
+  font-size: 36px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: var(--white);
+  margin-bottom: 40px;
+}
+
+.legends-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ========== LEGEND CARD ========== */
+.legend-card {
+  background: rgb(86, 16, 16); /* زي كروت البطولات */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  color: var(--gold);
+}
+
+.legend-card:hover {
+  transform: translateY(-5px);
+}
+
+.legend-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.legend-info {
+  padding: 20px;
+  text-align: right;
+}
+
+.legend-info h2 {
+  font-size: 22px;
+  color: #ffd700;
+}
+
+.legend-info p {
+  margin: 10px 0;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.legend-info blockquote {
+  color: #ffd700;
+  font-style: italic;
+  margin-top: 15px;
+  border-right: 3px solid var(--red);
+  padding-right: 10px;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: var(--dark); /* أسود زي الهوم */
+  padding: 30px 20px;
+  text-align: center;
+  color: var(--white);
+  margin-top: 60px;
+}
+
+.footer .social-links {
+  margin-bottom: 15px;
+}
+
+.footer .social-links a {
+  color: var(--white);
+  font-size: 22px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: var(--gold);
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+/* ========== الألوان ========== */
+:root {
+  --red: #a00000;
+  --black: #111;
+  --gold: #ffd700;
+  --cream: #f7f1e3;
+  --white: #fff;
+}
+
+/* ========== Reset ========== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  direction: rtl;
+  background-color: var(--red);
+  color: var(--gold);
+}
+
+/* ========== Navbar ========== */
+.navbar {
+  background-color: var(--black);
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: var(--gold);
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.navbar nav a.active,
+.navbar nav a:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+/* ========== فريق على شكل ملعب ========== */
+.team-formation {
+  background-color: var(--red);
+  padding: 60px 20px;
+  text-align: center;
+  color: var(--gold);
+}
+
+.team-formation h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: var(--gold);
+}
+
+.field {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 40px 20px;
+  background-image: url("https://i.pinimg.com/736x/ae/d2/a0/aed2a002976aa72776b4fe71e971775a.jpg"); /* صورة نجيل */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.player {
+  background-color: var(--black);
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 10px;
+  text-align: center;
+  width: 110px;
+  box-shadow: 0 0 8px rgba(197, 182, 182, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.player:hover {
+  transform: translateY(-5px);
+}
+
+.player img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.player p {
+  font-size: 14px;
+  color: var(--black);
+  margin: 0;
+}
+
+.player span {
+  display: block;
+  font-size: 13px;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.keeper {
+  margin: auto;
+  background-color: #111;
+  color: var(--gold);
+}
+
+/* ========== Footer ========== */
+.footer {
+  background-color: var(--black);
+  color: var(--gold);
+  padding: 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: var(--gold);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer .social-links a:hover {
+  color: var(--white);
+}
+.player p {
+  font-size: 14px;
+  color: var(--gold); /* استخدمي اللون الذهبي عشان يظهر على الخلفية السوداء */
+  margin: 0;
+}
+
+/* ✅ خلفية صفحة التواصل */
+.contact-bg {
+  background: url("images/gal2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: var(--gold);
+}
+
+/* ✅ تنسيق محتوى النموذج */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  padding: 60px 20px;
+}
+
+.contact-form-container {
+  background-color: rgba(0, 0, 0, 0.6); /* شفاف */
+  padding: 40px 30px;
+  border-radius: 15px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
+
+.contact-form-container h2 {
+  font-size: 26px;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.contact-form-container p {
+  color: var(--cream);
+  margin-bottom: 25px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1); /* أبيض شفاف */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* حد خفيف */
+  color: var(--gold); /* الخط يفضل ذهبي */
+
+  color: #949907;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  background-color: var(--red);
+  color: var(--gold);
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--gold);
+  color: var(--red);
+}
+
+.contact-form-container .social-links {
+  margin-top: 20px;
+}
+
+.contact-form-container .social-links a {
+  color: var(--gold);
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* 🌑 خلفية الصفحة زي الهوم */
+.about-club-page {
+  background-color: #8b0000; /* أحمر غامق */
+  color: white;
+  font-family: "Cairo", sans-serif;
+  line-height: 1.8;
+}
+
+/* 🟥 العنوان الرئيسي */
+.about-club h2 {
+  text-align: center;
+  font-size: 32px;
+  margin: 30px 0;
+  color: #ffc107; /* دهبي */
+}
+
+/* ✅ صندوق كل قسم */
+.section-box {
+  background-color: #1c1c1c;
+  padding: 20px;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ✅ العناوين داخل الأقسام */
+.section-box h3 {
+  color: #ffcc00; /* دهبي */
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+/* ✅ قائمة المبادئ والمدربين */
+.principles,
+.coaches {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.principles li,
+.coaches li {
+  background-color: #b30000;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #ffc107;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.principles li:hover,
+.coaches li:hover {
+  background-color: #a00000;
+  transform: scale(1.05);
+}
+
+/* ✅ جدول الرؤساء */
+.history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.history-table th,
+.history-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.history-table thead {
+  background-color: #b30000;
+  color: white;
+}
+
+/* ✅ فوتر */
+.footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 30px 10px;
+  margin-top: 60px;
+}
+
+.footer .social-links {
+  margin-bottom: 10px;
+}
+
+.footer .social-links a {
+  color: #ffc107;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #fff;
+}
+
+/* Store Section */
+.store-section {
+  background-color: #8b0000;
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+.store-section h2 {
+  color: #ffc107;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.product-card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s;
+  text-align: right;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  color: #ffc107;
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #ffc107;
+  color: #1c1c1c;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #e6b800;
+}
